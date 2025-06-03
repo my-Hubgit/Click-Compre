@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Seu catálogo Online de compra de produtos e aquisição de conhecimento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos específicos para a página Sobre Nós */
+        .about-us-section {
+            background-color: var(--background-dark);
+            padding: 2.5em;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-medium);
+            margin-top: 2em;
+            text-align: left;
+        }
+        .about-us-section h1,
+        .about-us-section h2,
+        .about-us-section h3 {
+            text-align: center;
+            margin-bottom: 1em;
+            color: var(--primary-color);
+        }
+        .about-us-section p {
+            margin-bottom: 1.5em;
+            line-height: 1.8;
+            color: var(--text-color);
+            text-align: justify;
+        }
+        .about-us-section .highlight-text {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .mission-vision-values {
+            display: flex;
+            flex-direction: column; /* Em coluna por padrão para mobile */
+            gap: 2em;
+            margin-top: 3em;
+            padding: 0 1em; /* Um pouco de padding nas laterais */
+        }
+
+        .mvv-item {
+            background-color: var(--background-light);
+            padding: 1.8em;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .mvv-item h3 {
+            color: var(--secondary-color);
+            font-size: 1.6em;
+            margin-bottom: 0.8em;
+            text-align: center;
+        }
+
+        .mvv-item p {
+            font-size: 1em;
+            color: var(--text-color);
+            line-height: 1.6;
+            text-align: justify; /* Justifica o texto dentro dos cards */
+        }
+
+        /* Responsividade para Mission, Vision, Values */
+        @media (min-width: 768px) {
+            .mission-vision-values {
+                flex-direction: row; /* Em linha para telas maiores */
+                justify-content: space-around;
+                align-items: flex-start; /* Alinha os itens pelo topo */
+            }
+            .mvv-item {
+                flex: 1; /* Permite que os itens cresçam e ocupem o espaço */
+                max-width: 32%; /* Limita a largura para 3 colunas */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about-us-section {
+                padding: 1.5em;
+            }
+            .about-us-section h1 {
+                font-size: 2em;
+            }
+            .about-us-section p {
+                font-size: 0.9em;
+            }
+            .mvv-item {
+                padding: 1.2em;
+            }
+            .mvv-item h3 {
+                font-size: 1.4em;
+            }
+            .mvv-item p {
+                font-size: 0.9em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-sua-loja.png" alt="Logo Sua Plataforma">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">E-books</a></li>
+                <li><a href="#">Concursos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="privacy.html">Privacidade</a></li>
+                <li><a href="terms.html">Termos de Uso</a></li>
+                <li><a href="returns.html">Trocas e Devoluções</a></li>
+                <li><a href="about.html">Sobre Nós</a></li> </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button>Buscar</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-us-section">
+            <h1 class="page-title">Sobre Nós</h1>
+
+            <p>Bem-vindo(a) à <strong class="highlight-text">Sua Plataforma de Aprendizagem Online</strong>! Somos mais do que um site; somos seu portal para o **conhecimento transformador**. No vasto universo do aprendizado digital, atuamos como um **catálogo curado de produtos online**, conectando você diretamente aos melhores cursos, e-books e materiais preparatórios disponíveis na Hotmart.</p>
+
+            <p>Nossa jornada no mercado digital é impulsionada pela paixão em **proporcionar conhecimento acessível e de alta qualidade** para pessoas que buscam **aprovação em concursos públicos**, o **desenvolvimento de novas habilidades para uma carreira promissora**, ou a capacitação para **gerar uma renda extra** e alcançar a liberdade financeira.</p>
+
+            <p>Acreditamos que cada clique e cada aprendizado são um passo em direção a um futuro mais brilhante. Por isso, selecionamos cuidadosamente conteúdos de diversos nichos, garantindo que você encontre exatamente o que precisa para alcançar seus objetivos. Estamos aqui para simplificar sua busca e enriquecer sua trajetória de aprendizado, com a segurança e a confiabilidade de uma das maiores plataformas de produtos digitais da América Latina, a Hotmart.</p>
+
+            <p>Junte-se a nós nesta jornada de descobertas e conquistas. Seu potencial é ilimitado, e o conhecimento é a chave para liberá-lo!</p>
+
+            <div class="mission-vision-values">
+                <div class="mvv-item">
+                    <h3>MISSÃO</h3>
+                    <p>Democratizar o acesso ao conhecimento transformador, atuando como um catálogo curado de produtos digitais, e capacitar indivíduos a alcançar seus objetivos acadêmicos, profissionais e financeiros, conectando-os aos melhores recursos educacionais disponíveis online.</p>
+                </div>
+                <div class="mvv-item">
+                    <h3>VISÃO</h3>
+                    <p>Ser a principal referência e o destino preferido para quem busca educação de qualidade no ambiente digital, reconhecida pela excelência na curadoria de conteúdo e pelo impacto positivo na vida de milhares de pessoas, impulsionando suas carreiras e novas fontes de renda.</p>
+                </div>
+                <div class="mvv-item">
+                    <h3>VALORES</h3>
+                    <ul>
+                        <li><strong>Acessibilidade:</strong> Facilitar o acesso ao aprendizado para todos.</li>
+                        <li><strong>Qualidade:</strong> Comprometimento com a curadoria de conteúdos relevantes e de alto valor.</li>
+                        <li><strong>Transparência:</strong> Clareza na comunicação e nos processos de direcionamento aos parceiros.</li>
+                        <li><strong>Inovação:</strong> Busca contínua por novas e melhores formas de conectar conhecimento.</li>
+                        <li><strong>Empoderamento:</strong> Acreditamos no poder do conhecimento para transformar vidas.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Seu catálogo Online de compra de produtos e aquisição de conhecimento. Todos os direitos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="privacy.html">Política de Privacidade</a></li>
+                <li><a href="returns.html">Trocas e Devoluções</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+             <a href="https://www.instagram.com/clickecompre44/" target="_blank" aria-label="Instagram"><img src="img/icon-instagram.png" alt="Instagram"></a>
+            <a href="#" aria-label="YouTube"><img src="https://via.placeholder.com/24?text=Y" alt="YouTube"></a>
+        </div>
+    </footer>
+</body>
+</html>
