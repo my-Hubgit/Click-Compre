@@ -106,7 +106,7 @@ function loadProductDetails() {
     document.getElementById('product-description-full').textContent = product.description;
     
     const productMaterialsCare = document.getElementById('product-materials-care');
-    productMaterialsCare.textContent = product.materialsAndCare || "Feito com materiais de alta qualidade. Para maior durabilidade, siga as instruções de cuidado na etiqueta.";
+    productMaterialsCare.innerHTML = product.materialsAndCare || "Feito com materiais de alta qualidade. Para maior durabilidade, siga as instruções de cuidado na etiqueta.";
 
     const productFeaturesList = document.getElementById('product-features');
     productFeaturesList.innerHTML = ''; // Limpa antes de adicionar
@@ -156,7 +156,9 @@ function loadProductDetails() {
     const buyNowButton = document.getElementById('buy-now-button');
     // Este é o link para o carrinho/checkout. Você pode adicionar lógicas JS para adicionar ao carrinho aqui.
     // Lembre-se de substituir este link pela URL real do seu sistema de carrinho/compra.
-    buyNowButton.href = `/carrinho?produtoId=${product.id}&quantidade=1`; // Exemplo de link para carrinho
+   // buyNowButton.href = `/carrinho?produtoId=${product.id}&quantidade=1`; // Exemplo de link para carrinho
+        buyNowButton.href = product.buy; // Exemplo de link para carrinho
+        buyNowButton.target = "_blank"; // Abre a página de compra em uma nova janela
 
     // Dados Estruturados (Schema.org Product)
     const productSchema = {

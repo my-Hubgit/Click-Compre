@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Maquiagem Profissional by Bruna Tasca - Click&Compre - Seu catálogo online de produtos e conteúdos para aquisição de conhecimento.</title>
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos específicos para a página de vendas */
+        .sales-page-section {
+            background-color: var(--background-dark);
+            padding: 2.5em;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-medium);
+            margin-top: 2em;
+            text-align: left;
+        }
+        .sales-page-section h1,
+        .sales-page-section h2,
+        .sales-page-section h3 {
+            text-align: center;
+            margin-bottom: 1em;
+            color: var(--primary-color);
+        }
+        .sales-page-section p {
+            margin-bottom: 1.5em;
+            line-height: 1.8;
+            color: var(--text-color);
+            text-align: justify;
+        }
+
+        /* COPY Section */
+        .copy-section {
+            text-align: center;
+            margin-bottom: 3em;
+        }
+        .copy-section .headline-problem {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: var(--accent-color); /* Uma cor que chame atenção para o problema */
+            margin-bottom: 1em;
+            line-height: 1.4;
+        }
+        .copy-section .headline-solution {
+            font-size: 1.5em; /* Maior para a solução */
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1.5em;
+            line-height: 1.3;
+        }
+
+        /* Price Display */
+        .price-display {
+            text-align: center;
+            margin: 2em 0 3em;
+            background-color: var(--secondary-color); /* Cor de destaque */
+            padding: 1.5em 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .price-display p {
+            font-size: 1.3em;
+            color: #FFFFFF; /* Texto branco para contraste */
+            margin-bottom: 0.5em;
+        }
+        .price-display .price-value {
+            font-size: 3em; /* Valor do preço bem grande */
+            font-weight: 900;
+            color: #FFFFFF;
+            line-height: 1;
+            display: block;
+        }
+        .price-display .price-info {
+            font-size: 1em;
+            color: #FFFFFF;
+            opacity: 0.8;
+            margin-top: 0.5em;
+        }
+
+        /* Bruna Tasca Bio Section */
+        .bruna-bio-section {
+            background-color: var(--background-light);
+            padding: 2em;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 3em;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .bruna-bio-section p {
+            font-size: 1.1em;
+            color: var(--text-color);
+            line-height: 1.7;
+            text-align: justify;
+        }
+        .bruna-bio-section strong {
+            color: var(--primary-color); /* Destaque para o nome da Bruna */
+        }
+        .bruna-bio-section .highlight-bio {
+            color: var(--accent-color); /* Destaque para palavras-chave como "dores" e "auto estima" */
+            font-weight: 700;
+        }
+
+        /* Emotional Appeal Section */
+        .emotional-appeal-section {
+            background-color: var(--background-light);
+            padding: 2em;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 3em;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .emotional-appeal-section p {
+            font-size: 1.2em;
+            color: var(--text-color);
+            line-height: 1.8;
+            margin-bottom: 1.5em;
+        }
+        .emotional-appeal-section .highlight-emotion {
+            color: var(--secondary-color);
+            font-weight: 700;
+        }
+
+        /* Buy Button */
+        .buy-button-container {
+            text-align: center;
+            margin: 3em 0;
+        }
+        .buy-button {
+            display: inline-block;
+            background-color: #FF4500; /* Laranja Vívido - Orange Red */
+            color: #FFFFFF;
+            padding: 18px 40px;
+            border-radius: 50px; /* Mais arredondado */
+            font-size: 1.6em;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 15px rgba(255, 69, 0, 0.4); /* Sombra que destaca */
+            transition: all 0.3s ease;
+            position: relative; /* Para o pseudo-elemento */
+            overflow: hidden; /* Para o efeito de brilho */
+        }
+        .buy-button:hover {
+            background-color: #E63900; /* Laranja mais escuro ao passar o mouse */
+            transform: translateY(-3px); /* Leve levantamento */
+            box-shadow: 0 12px 20px rgba(255, 69, 0, 0.6);
+        }
+        .buy-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: skewX(-30deg);
+            transition: 0.7s;
+        }
+        .buy-button:hover::before {
+            left: 100%;
+        }
+
+        /* Video Player */
+        .video-player-container {
+            margin: 3em auto;
+            max-width: 800px; /* Limita a largura do vídeo */
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+            background-color: black;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .video-player-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 10px;
+        }
+
+        /* Course Content */
+        .course-content-list {
+            margin-top: 2em;
+            list-style: none;
+            padding: 0;
+        }
+        .course-content-list li {
+            background-color: var(--background-light);
+            margin-bottom: 0.8em;
+            padding: 1.2em 1.5em;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+            color: var(--text-color-light);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        .course-content-list li strong {
+            color: var(--accent-color);
+            font-size: 1.3em;
+            margin-right: 0.8em;
+            flex-shrink: 0; /* Evita que o número encolha */
+        }
+
+        /* Image Gallery */
+        .image-gallery {
+            margin-top: 3em;
+            text-align: center;
+        }
+        .image-gallery h2 {
+            margin-bottom: 1.5em;
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha */
+            justify-content: center; /* Centraliza as imagens */
+            gap: 1.5em; /* Espaçamento entre as imagens */
+        }
+        .image-grid img {
+            max-width: 280px; /* Tamanho máximo das imagens */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .image-grid img:hover {
+            transform: scale(1.03); /* Efeito de zoom sutil ao passar o mouse */
+        }
+
+        /* Responsividade geral */
+        @media (max-width: 768px) {
+            .sales-page-section {
+                padding: 1.5em;
+            }
+            .copy-section .headline-problem {
+                font-size: 1.4em;
+            }
+            .copy-section .headline-solution {
+                font-size: 1.8em;
+            }
+            .price-display {
+                padding: 1em;
+            }
+            .price-display .price-value {
+                font-size: 2.5em;
+            }
+            .emotional-appeal-section p, .bruna-bio-section p {
+                font-size: 1em;
+            }
+            .buy-button {
+                padding: 15px 30px;
+                font-size: 1.4em;
+            }
+            .course-content-list li {
+                font-size: 1em;
+                padding: 1em;
+            }
+            .course-content-list li strong {
+                font-size: 1.1em;
+            }
+            .image-grid img {
+                max-width: 100%; /* Imagens ocupam toda a largura em telas pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/img/logo-sua-loja.png" alt="Loja online">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Início</a></li>
+             
+                <li><a href="/privacy.html">Privacidade</a></li>
+                <li><a href="/terms.html">Termos de Uso</a></li>
+                <li><a href="/returns.html">Trocas e Devoluções</a></li>
+                <li><a href="/about.html">Sobre Nós</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button>Buscar</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="sales-page-section">
+            <h1 class="page-title">Auto Maquiagem Profissional by Bruna Tasca</h1>
+
+            <div class="copy-section">
+                <p class="headline-problem">
+                    **Você se sente frustrada e insegura ao tentar se maquiar?** Passa horas no espelho, assiste tutoriais complexos e ainda assim sente que o resultado nunca é como o esperado? Acha que maquiagem é só para quem nasceu com o dom, e que sua beleza natural está escondida por falta de técnica e confiança?
+                </p>
+                <p class="headline-solution">
+                    **Imagine-se, em poucas horas, dominando cada pincelada, cada tom, cada segredo!** Este curso é a sua chave para desvendar a maquiagem perfeita, que realça sua beleza única, eleva sua autoestima e te faz sentir poderosa e confiante em qualquer ocasião. Chega de tentativas frustradas, agora é a sua vez de brilhar!
+                </p>
+            </div>
+
+            <!-- Espaço de algumas linhas -->
+            <br><br><br>
+
+            
+
+            <p class="emotional-appeal-section">
+                Sabemos o quanto é desafiador olhar para o espelho e sentir que sua beleza não está sendo plenamente expressa. Aquela <strong class="highlight-emotion">insegurança</strong> que surge ao tentar se maquiar para um evento importante, ou a frustração de não conseguir o <strong class="highlight-emotion">olhar desejado</strong> para o dia a dia. Você não está sozinha nessa! Mas e se eu te dissesse que existe um caminho simples e divertido para você se tornar a <strong class="highlight-emotion">sua própria maquiadora profissional</strong>? O curso "Auto Maquiagem Profissional by Bruna Tasca" não é apenas sobre técnicas; é sobre <strong class="highlight-emotion">redescobrir sua confiança, iluminar seu sorriso e sentir-se verdadeiramente radiante</strong>. Você merece se sentir linda, poderosa e pronta para conquistar o mundo. <strong class="highlight-emotion">Este curso é o investimento na mulher incrível que você já é. Não adie mais a sua transformação!</strong>
+            </p>
+
+            <div class="price-display">
+                <p>Aproveite esta oportunidade única por apenas:</p>
+                <span class="price-value">R$ 197,00</span>
+                <p class="price-info">Pagamento único. Acesso imediato e vitalício!</p>
+            </div>
+
+            <div class="buy-button-container">
+                <a href="https://go.hotmart.com/S100082295U" target="_blank" class="buy-button">
+                    Quero Me Sentir Linda Agora!
+                </a><img width="20%" src="/img/197.png">
+            </div>
+
+            <h2 style="text-align: center; margin-top: 3em;">Assista ao Vídeo Promocional</h2>
+            <div class="video-player-container">
+                <iframe src="https://player.vimeo.com/video/840901180?h=96a6d25f00&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" title="Auto Maquiagem Profissional by Bruna Tasca.mp4"></iframe>
+            </div>
+             <div class="bruna-bio-section">
+                <p>
+                    <strong style="font-size: 1.2em;">Bruna Tasca</strong> é maquiadora desde 2011, e desde então atendeu milhares de mulheres. Conhece as técnicas de maquiagem e também as <span class="highlight-bio">dores das mulheres de verdade</span>, que querem melhorar sua imagem pessoal e sua <span class="highlight-bio">autoestima</span>. Juntamos nesse curso toda a experiência de Bruna ao longo de mais de uma década de atendimentos e cursos presenciais, para proporcionar à mulher brasileira a chance de aprender a se maquiar em casa, por um <strong style="color: var(--secondary-color);">valor menor que uma única maquiagem em salão</strong>.
+                </p>
+            </div>
+
+            <h2 style="text-align: center; margin-top: 3em;">O Que Você Vai Aprender no Curso:</h2>
+            <ul class="course-content-list">
+                <li><strong>01</strong> Boas Vindas</li>
+                <li><strong>02</strong> Descobrindo seu Tipo de Pele</li>
+                <li><strong>03</strong> Maquiagem LEVE para o Dia a Dia</li>
+                <li><strong>04</strong> Pele Resistente para Eventos de Dia</li>
+                <li><strong>05</strong> Preparação de Pele - Oleosa e Acneica</li>
+                <li><strong>06</strong> Maquiagem PROFISSIONAL Completa</li>
+                <li><strong>07</strong> Módulo Especial</li>
+                <li><strong>08</strong> BÔNUS</li>
+            </ul>
+           
+
+            <div class="image-gallery">
+                <h2>Galeria de Imagens do Curso</h2>
+                <div class="image-grid">
+                    <!-- Substitua os 'src' pelas URLs das suas imagens reais -->
+                    <img src="/img/produtos/maquiagem1.jpg" alt="Imagem do Curso de Auto Maquiagem 1">
+                    <img src="/img/produtos/maquiagem2.jpeg" alt="Imagem do Curso de Auto Maquiagem 2">
+                    <img src="/img/produtos/maquiagem3.jpg" alt="Imagem do Curso de Auto Maquiagem 3">
+                    <img src="/img/produtos/maquiagem4.jpg" alt="Imagem do Curso de Auto Maquiagem 4">
+                    <img src="/img/produtos/maquiagem5.jpg" alt="Imagem do Curso de Auto Maquiagem 5">
+                    
+                </div>
+                <p style="font-size: 0.9em; color: var(--text-color-light); margin-top: 1.5em;">*Imagens meramente ilustrativas fonte http://www.google.com.br.</p>
+            </div>
+
+            <div class="buy-button-container">
+                <a href="https://go.hotmart.com/S100082295U" target="_blank" class="buy-button">
+                    SIM! Quero Revelar Minha Melhor Versão!
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Seu catálogo online de produtos e conteúdos para aquisição de conhecimento. Todos os direitos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="terms.html">Termos de Uso</a></li>
+                <li><a href="privacy.html">Política de Privacidade</a></li>
+                <li><a href="returns.html">Trocas e Devoluções</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="https://www.instagram.com/clickecompre44/" target="_blank" aria-label="Instagram"><img src="https://via.placeholder.com/24?text=I" alt="Instagram"></a>
+            <a href="#" aria-label="YouTube"><img src="https://via.placeholder.com/24?text=Y" alt="YouTube"></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -7,31 +7,33 @@
 // sem a necessidade de declarações 'const' repetidas.
 window.products = [
     {
-        id: 'almofada-bordada-jardim', // ID único para o produto
-        name: 'Almofada Bordada Exclusiva - Coleção Jardim Secreto', // Nome do produto
-        description: 'Almofada feita à mão com bordado detalhado de flores e borboletas em tons pastel. Traz charme e elegância para qualquer ambiente. Perfeita para presentear!', // Descrição resumida
-        price: 89.90, // Preço do produto
-        imageUrl: 'img/produtos/almofada-bordada-jardim-main.jpg', // Imagem principal
-        altText: 'Almofada bordada à mão com design floral delicado para decoração de interiores.', // Texto alternativo da imagem principal
+        id: 'Auto Maquiagem Profissional', // ID único para o produto
+        buy:'https://go.hotmart.com/S100082295U',
+        name: 'Auto Maquiagem Profissional by Bruna Tasca ', // Nome do produto
+        description: 'Sabemos o quanto é desafiador olhar para o espelho e sentir que sua beleza não está sendo plenamente expressa. Aquela insegurança que surge ao tentar se maquiar para um evento importante, ou a frustração de não conseguir o olhar desejado para o dia a dia. Você não está sozinha nessa! Mas e se eu te dissesse que existe um caminho simples e divertido para você se tornar a sua própria maquiadora profissional? O curso "Auto Maquiagem Profissional by Bruna Tasca" não é apenas sobre técnicas; é sobre redescobrir sua confiança, iluminar seu sorriso e sentir-se verdadeiramente radiante. Você merece se sentir linda, poderosa e pronta para conquistar o mundo. Este curso é o investimento na mulher incrível que você já é. Não adie mais a sua transformação!', // Descrição resumida
+        price: 197.00, // Preço do produto
+        imageUrl: 'img/produtos/maquiagem1.jpg', // Imagem principal
+        altText: 'Auto Maquiagem Profissional', // Texto alternativo da imagem principal
         additionalImages: [ // NOVAS IMAGENS ADICIONAIS
-            'img/produtos/almofada-bordada-jardim-detalhe.jpg',
-            'img/produtos/almofada-bordada-jardim-ambiente.jpg',
-            'img/produtos/almofada-bordada-jardim-fechamento.jpg'
+            'img/produtos/maquiagem2.jpeg',
+            'img/produtos/maquiagem3.jpg',
+            'img/produtos/maquiagem4.jpg',
+            'img/produtos/maquiagem5.jpg'
         ],
-        category: 'decoracao', // Categoria do produto (para filtros)
-        tags: ['almofada', 'bordado', 'flor', 'borboleta', 'decoracao', 'presente', 'sala', 'quarto', 'jardim secreto', 'arte em tecido'], // Tags para busca interna e SEO
+        videoUrl: "https://player.vimeo.com/video/840901180?h=96a6d25f00&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", // Use a URL de incorporação do seu vídeo
+        category: 'curso', // Categoria do produto (para filtros)
+        tags: ['automaquiagem', 'curso', 'renda extra', 'beleza', 'feminina', 'mulher', 'bonita', 'Bruna Tasca'], // Tags para busca interna e SEO
         rating: 4.8, // Avaliação (se aplicável)
         reviews: 25, // Número de avaliações
         isNew: true, // Flag para "Novidade"
         isBestseller: false, // Flag para "Mais Vendido"
         features: [ // NOVOS RECURSOS DETALHADOS PARA PÁGINA DE PRODUTO
-            "Bordado artesanal exclusivo em fio de seda",
-            "Tecido de linho 100% natural, hipoalergênico",
-            "Enchimento macio e removível de fibra siliconada",
-            "Capa com zíper invisível para fácil lavagem",
-            "Dimensões: 45x45cm"
-        ],
-        materialsAndCare: "Material: Capa de linho e bordado em seda. Enchimento: fibra siliconada. Cuidado: Lavar a capa à mão com sabão neutro. Não usar alvejante. Secar à sombra. Não passar ferro diretamente sobre o bordado." // NOVOS MATERIAIS E CUIDADO
+            "Curso em video de automaquiagem",
+            "Produzido por Bruna Tasca",
+            "Aprenda a se automaquiar",
+            "Descubra todo o seu potencial",
+            "Em videos e apostilas" ],
+        materialsAndCare: "* Descobrindo seu Tipo de Pele <br> * Maquiagem LEVE para o Dia a Dia <br> * Pele Resistente para Eventos de Dia <br> * Preparação de Pele - Oleosa e Acneica <br> * Maquiagem PROFISSIONAL Completa <br> * Módulo Especial", // NOVOS MATERIAIS E CUIDADO
     },
     {
         id: 'caneca-ceramica-personalizada',
