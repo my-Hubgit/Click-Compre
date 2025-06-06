@@ -36,15 +36,15 @@ window.products = [
         materialsAndCare: "* Descobrindo seu Tipo de Pele <br> * Maquiagem LEVE para o Dia a Dia <br> * Pele Resistente para Eventos de Dia <br> * Preparação de Pele - Oleosa e Acneica <br> * Maquiagem PROFISSIONAL Completa <br> * Módulo Especial", // NOVOS MATERIAIS E CUIDADO
     },
     {
-        id: 'caneca-ceramica-personalizada',
-        name: 'Caneca de Cerâmica Artesanal - Frase Motivacional',
-        description: 'Caneca de cerâmica feita artesanalmente, com design rústico e frase motivacional gravada em alto-relevo. Ideal para seu café ou chá da manhã, trazendo inspiração ao seu dia.',
-        price: 45.00,
-        imageUrl: 'img/produtos/caneca-ceramica-motivacional.jpg',
-        altText: 'Caneca de cerâmica artesanal na cor creme com a frase "Acredite nos seus sonhos" em relevo e detalhes de pintura rústica.',
+        id: 'Escola de Bolo 4.0',
+        name: 'Escola de Bolo 4.0 - 4 em 1 by Marrara Bortoloti',
+        description: ' mercado de bolos e doces caseiros nunca esteve tão aquecido, e a demanda por produtos de qualidade e com um toque especial é gigantesca. Mas como se destacar? Como garantir que seus bolos sejam lindos, deliciosos e lucrativos? A resposta está em um **método comprovado**, que te ensina desde o zero, desvendando todos os segredos.',
+        price: 197.00,
+        imageUrl: 'img/marrara/Marrara.jpg',
+        altText: 'curso de bolo, escola de bolo, Marrara Bortoloti',
         additionalImages: [], // Sem imagens adicionais para este exemplo
-        category: 'presentes',
-        tags: ['caneca', 'ceramica', 'artesanal', 'motivacional', 'cafe', 'cha', 'presente', 'escritorio', 'cozinha', 'feito a mão'],
+        category: 'Curso',
+        tags: ['curso de bolo, escola de bolo, Marrara Bortoloti, bolos perfeitos, decoração de bolo, renda extra, confeitaria, como fazer bolo, bolo para vender, empreender com bolos, curso de doces, receitas de bolo, mini tortas lucrativas, bolos de sucesso, bolos enfeitados'],
         rating: 5.0,
         reviews: 12,
         isNew: false,
@@ -57,6 +57,11 @@ window.products = [
         ],
         materialsAndCare: "Material: Cerâmica de alta temperatura. Cuidado: Pode ir ao micro-ondas e lava-louças. Evitar choque térmico."
     },
+
+
+
+
+
     {
         id: 'chaveiro-macrame-folha',
         name: 'Chaveiro de Macramê em Formato de Folha',
